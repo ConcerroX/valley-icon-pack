@@ -1,4 +1,4 @@
-package com.candybar.dev.applications;
+package concerrox.valley.applications;
 
 import androidx.annotation.NonNull;
 

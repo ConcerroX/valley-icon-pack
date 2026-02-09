@@ -35,7 +35,7 @@
             android:layout_marginTop="@dimen/about_profile_margin_top"
             android:background="?cb_cardBackground"
             android:elevation="4dp"
-            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.LargeComponent" />
 
         <TextView
             android:layout_width="match_parent"

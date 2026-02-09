@@ -3,3 +3,4 @@ plugins {
 }
 
 include ':app', ':library', ':extLibs:PreLollipopTransitions'
+include ':iconPackMaker'

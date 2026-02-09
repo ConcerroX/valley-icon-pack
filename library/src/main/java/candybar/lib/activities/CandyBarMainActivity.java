@@ -139,7 +139,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         ActivityCompat.OnRequestPermissionsResultCallback, RequestListener, InAppBillingListener,
         SearchListener, WallpapersListener {
 
-    private TextView mToolbarTitle;
+    private Toolbar mToolbar;
     private DrawerLayout mDrawerLayout;
     private NavigationView mNavigationView;
 
@@ -205,20 +205,18 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mNavigationView = findViewById(R.id.navigation_view);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        mToolbarTitle = findViewById(R.id.toolbar_title);
+        mToolbar = findViewById(R.id.toolbar);
 
-        toolbar.setPopupTheme(isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight);
-        toolbar.setTitle("");
-        setSupportActionBar(toolbar);
+        mToolbar.setPopupTheme(isMaterialYou ? R.style.CandyBar_Theme_App_MaterialYou : R.style.CandyBar_Theme_App_DayNight);
+        setSupportActionBar(mToolbar);
 
         mFragManager = getSupportFragmentManager();
 
-        initNavigationView(toolbar);
+        initNavigationView(mToolbar);
         initNavigationViewHeader();
         registerBackPressHandler();
 
-        ViewCompat.setOnApplyWindowInsetsListener(toolbar, (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(mToolbar, (v, insets) -> {
             ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
             params.topMargin = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
             findViewById(R.id.inset_padding).getLayoutParams().height = params.topMargin;
@@ -488,7 +486,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         if (mFragmentTag == Extras.Tag.REQUEST) {
             String title = getResources().getString(R.string.navigation_view_request);
             if (count > 0) title += " (" + count + ")";
-            mToolbarTitle.setText(title);
+            mToolbar.setTitle(title);
         }
     }
 
@@ -989,7 +987,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
 
         Menu menu = mNavigationView.getMenu();
         menu.getItem(mPosition).setChecked(true);
-        mToolbarTitle.setText(menu.getItem(mPosition).getTitle());
+        mToolbar.setTitle(menu.getItem(mPosition).getTitle());
 
         backPressedCallback.setEnabled(mFragmentTag != Extras.Tag.HOME);
     }

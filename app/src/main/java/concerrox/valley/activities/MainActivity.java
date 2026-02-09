@@ -1,8 +1,8 @@
-package com.candybar.dev.activities;
+package concerrox.valley.activities;
 
 import androidx.annotation.NonNull;
 
-import com.candybar.dev.licenses.License;
+import concerrox.valley.licenses.License;
 
 import candybar.lib.activities.CandyBarMainActivity;
 

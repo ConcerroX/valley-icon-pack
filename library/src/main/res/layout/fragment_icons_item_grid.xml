@@ -4,8 +4,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:theme="@style/RippleStyle">
+    android:gravity="center">
 
     <LinearLayout
         android:id="@+id/check_background"

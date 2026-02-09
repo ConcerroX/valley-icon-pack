@@ -56,5 +56,7 @@
         <!-- Wallpaper Preview -->
         <item name="cb_wallpaperStatusBar">#66000000</item>
         <item name="cb_wallpaperToolbar">#66000000</item>
+
+        <item name="android:textColorSecondary">#66000000</item>
     </style>
 </resources>

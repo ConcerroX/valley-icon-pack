@@ -20,7 +20,7 @@
 
     <application
         tools:ignore="AllowBackup,GoogleAppIndexingUrlError,GoogleAppIndexingWarning"
-        android:name=".applications.CandyBar"
+        android:name="concerrox.valley.applications.CandyBar"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:networkSecurityConfig="@xml/network_config"
@@ -31,7 +31,7 @@
         tools:targetApi="33">
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="concerrox.valley.activities.MainActivity"
             android:launchMode="singleTop"
             android:exported="true"
             android:theme="@style/Theme.App.Starting"
@@ -199,7 +199,7 @@
         </activity>
 
         <provider
-            android:name=".services.MuzeiService"
+            android:name="concerrox.valley.services.MuzeiService"
             android:authorities="${applicationId}.ArtProvider"
             android:label="@string/muzei_art_source_name"
             android:description="@string/muzei_art_source_desc"

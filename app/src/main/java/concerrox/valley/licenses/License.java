@@ -1,4 +1,4 @@
-package com.candybar.dev.licenses;
+package concerrox.valley.licenses;
 
 import com.candybar.dev.BuildConfig;
 

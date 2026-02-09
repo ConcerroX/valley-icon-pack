@@ -1,5 +1,8 @@
 <resources>
 
+    <style name="Theme.Valley.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+
     <style name="CandyBar.Theme.Base" parent="Theme.Material3.Light.NoActionBar">
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
@@ -112,7 +115,7 @@
 
     <style name="CandyBar.Theme.App.MaterialYou" parent="CandyBar.Theme.Base" />
 
-    <style name="CandyBar.Theme.Splash" parent="Theme.Material3.DayNight">
+    <style name="CandyBar.Theme.Splash" parent="Theme.MaterialComponents.DayNight">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>

@@ -273,7 +273,6 @@ public class IconsBaseFragment extends Fragment {
                                     if (j == 0) {
                                         tab.setIcon(R.drawable.ic_bookmarks);
                                     } else if (j < adapter.getItemCount()) {
-                                        tab.setCustomView(R.layout.fragment_icons_base_tab);
                                         tab.setText(adapter.getPageTitle(j - 1));
                                     }
                                 }

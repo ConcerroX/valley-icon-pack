@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Valley.Base"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,22 +9,8 @@
         android:id="@+id/tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
         android:visibility="invisible"
-        android:paddingLeft="@dimen/content_padding"
-        android:paddingStart="@dimen/content_padding"
-        android:paddingRight="@dimen/content_padding"
-        android:paddingEnd="@dimen/content_padding"
-        android:clipToPadding="false"
-        app:tabIndicator="@drawable/tab_indicator"
-        app:tabIndicatorColor="?cb_tabIndicator"
-        app:tabSelectedTextColor="?cb_tabTextSelected"
-        app:tabTextColor="?cb_tabText"
-        app:tabIconTint="@color/tab_icon"
-        app:tabIndicatorHeight="3dp"
-        app:tabPadding="@dimen/content_padding"
-        app:tabMode="scrollable"
-        app:tabRippleColor="?colorSecondary" />
+        app:tabMode="scrollable" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"

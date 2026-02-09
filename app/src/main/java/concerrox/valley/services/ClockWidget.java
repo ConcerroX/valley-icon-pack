@@ -1,4 +1,4 @@
-package com.candybar.dev.services;
+package concerrox.valley.services;
 
 import candybar.lib.services.CandyBarWidgetService;
 
