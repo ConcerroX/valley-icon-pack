@@ -44,8 +44,6 @@ import com.danimahardhika.android.helpers.animation.AnimationHelper;
 import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.danimahardhika.android.helpers.core.DrawableHelper;
 import com.danimahardhika.android.helpers.permission.PermissionCode;
-import com.kogitune.activitytransition.ActivityTransition;
-import com.kogitune.activitytransition.ExitActivityTransition;
 
 import java.util.HashMap;
 
@@ -105,7 +103,6 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
     private Runnable mRunnable;
     private Handler mHandler;
     private PhotoView mAttacher;
-    private ExitActivityTransition mExitTransition;
 
     private boolean prevIsDarkTheme;
 
@@ -189,11 +186,6 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         });
 
         if (!mIsResumed) {
-            mExitTransition = ActivityTransition
-                    .with(getIntent())
-                    .to(this, mImageView, Extras.EXTRA_IMAGE)
-                    .duration(300)
-                    .start(savedInstanceState);
         }
 
         if (mImageView.getDrawable() == null) {
@@ -298,10 +290,6 @@ public class CandyBarWallpaperActivity extends AppCompatActivity implements View
         WallpapersAdapter.sIsClickable = true;
         if (mHandler != null && mRunnable != null)
             mHandler.removeCallbacks(mRunnable);
-
-        if (mExitTransition != null) {
-            mExitTransition.exit(this);
-        }
     }
 
     @Override

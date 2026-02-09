@@ -26,11 +26,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.zixpo.candybar'
             artifactId = 'library'
-            version = rootProject.ext.VersionName
-
-            afterEvaluate {
-                from components.release
-            }
+            version = "1"
         }
     }
 }
@@ -44,15 +40,15 @@ allprojects {
 }
 
 android {
-    compileSdk = rootProject.ext.CompileSdk
+    compileSdk = 36
 
     namespace 'candybar.lib'
 
     defaultConfig {
-        minSdkVersion rootProject.ext.MinSdk
-        targetSdkVersion rootProject.ext.TargetSdk
+        minSdkVersion 21
+        targetSdkVersion 36
         vectorDrawables.useSupportLibrary true
-        buildConfigField 'String', 'VERSION_NAME', "\"${rootProject.ext.VersionName}\""
+        buildConfigField 'String', 'VERSION_NAME', "\"1\""
     }
 
     buildTypes {
@@ -93,8 +89,6 @@ java {
 }
 
 dependencies {
-    implementation project(':extLibs:PreLollipopTransitions')
-
     api 'androidx.annotation:annotation:1.9.1'
     api 'androidx.appcompat:appcompat:1.7.1'
     api 'com.google.android.apps.muzei:muzei-api:3.4.2'

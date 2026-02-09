@@ -24,7 +24,6 @@ import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.google.android.material.card.MaterialCardView;
-import com.kogitune.activitytransition.ActivityTransitionLauncher;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -194,11 +193,6 @@ public class WallpapersAdapter extends RecyclerView.Adapter<WallpapersAdapter.Vi
                     try {
                         final Intent intent = new Intent(mContext, CandyBarWallpaperActivity.class);
                         intent.putExtra(Extras.EXTRA_URL, mWallpapers.get(position).getURL());
-
-                        ActivityTransitionLauncher.with((AppCompatActivity) mContext)
-                                .from(image, Extras.EXTRA_IMAGE)
-                                .image(thumbnailBitmap)
-                                .launch(intent);
                     } catch (Exception e) {
                         sIsClickable = true;
                     }
