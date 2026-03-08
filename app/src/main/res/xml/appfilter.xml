@@ -1,40 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <iconback img1="iconback" />
-    <iconmask img1="iconmask" />
-    <scale factor="0.64" />
-
+    <iconback img1="iconback"/>
+    <iconmask img1="iconmask"/>
+    <scale factor="0.64"/>
     <!-- Icons -->
-    <item
-        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}"
-        drawable="system_dialer" />
-    <item
-        component="ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}"
-        drawable="system_dialer" />
-    <item
-        component="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}"
-        drawable="system_messages" />
-    <item
-        component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}"
-        drawable="system_contacts" />
-    <item
-        component="ComponentInfo{com.google.android.contacts/com.android.contacts.activities.PeopleActivity}"
-        drawable="system_contacts" />
-    <item component="ComponentInfo{com.android.mms/com.android.mms.ui.MmsTabActivity}"
-        drawable="system_messages" />
-    <item component="ComponentInfo{com.android.browser/com.android.browser.launch.SplashActivity}"
-        drawable="system_browser" />
-    <item
-        component="ComponentInfo{com.zhihu.android/com.zhihu.android.app.ui.activity.LauncherActivity}"
-        drawable="others_zhihu" />
-    <item
-        component="ComponentInfo{com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin}"
-        drawable="others_alipay" />
-    <item component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}"
-        drawable="others_wechat" />
-    <item
-        component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}"
-        drawable="google_photos" />
-
-
+    <item component="ComponentInfo{com.android.contacts/com.android.contacts.activities.TwelveKeyDialer}" drawable="system_dialer"/>
+    <item component="ComponentInfo{com.android.contacts/com.android.contacts.activities.PeopleActivity}" drawable="system_contacts"/>
+    <item component="ComponentInfo{com.android.browser/com.android.browser.launch.SplashActivity}" drawable="system_browser"/>
+    <item component="ComponentInfo{com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity}" drawable="google_photos"/>
+    <item component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.apps.authenticator2.main.MainActivity}" drawable="google_authenticator"/>
+    <item component="ComponentInfo{com.zhihu.android/com.zhihu.android.app.ui.activity.LauncherActivity}" drawable="others_zhihu"/>
+    <item component="ComponentInfo{com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin}" drawable="others_alipay"/>
+    <item component="ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI}" drawable="others_wechat"/>
+    <item component="ComponentInfo{com.ovital.ovitalMap/com.ovital.ovitalMap.LaunchActivity}" drawable="others_ovital_map"/>
+    <item component="ComponentInfo{pixelflow.adaptiveiconpack/pixelflow.adaptiveiconpack.activities.SplashActivity}" drawable="others_adaptive_icon_pack"/>
+    <item component="ComponentInfo{com.baidu.BaiduMap/com.baidu.baidumaps.WelcomeScreen.Alias0}" drawable="baidu_maps"/>
+    <item component="ComponentInfo{com.baidu.tieba/com.baidu.tieba.tblauncher.MainTabActivity}" drawable="baidu_tieba"/>
+    <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.NewMainProxyActivity}" drawable="google_sheets"/>
+    <item component="ComponentInfo{com.baidu.netdisk/com.baidu.netdisk.ui.DefaultMainActivity}" drawable="baidu_netdisk"/>
+    <item component="ComponentInfo{tv.danmaku.bili/tv.danmaku.bili.MainActivityV2}" drawable="others_bilibili"/>
+    <item component="ComponentInfo{com.google.android.calculator/com.android.calculator2.Calculator}" drawable="google_calculator"/>
+    <item component="ComponentInfo{com.buyanchuantong.buyanshufa/com.buyanchuantong.buyanshufa.SplashActivity}" drawable="others_buyanshufa"/>
+    <item component="ComponentInfo{com.x8bit.bitwarden/com.x8bit.bitwarden.MainActivity}" drawable="others_bitwarden"/>
+    <item component="ComponentInfo{xyz.blueskyweb.app/xyz.blueskyweb.app.MainActivity}" drawable="others_bluesky"/>
+    <item component="ComponentInfo{flar2.homebutton/a.a}" drawable="others_button_mapper"/>
+    <item component="ComponentInfo{com.drakeet.purewriter/com.drakeet.purewriter.WriterActivity}" drawable="others_pure_writer"/>
+    <item component="ComponentInfo{com.zavukodlak.candycons/com.zavukodlak.candycons.MainActivity}" drawable="others_candycons"/>
+    <item component="ComponentInfo{com.google.android.apps.dynamite/com.google.android.apps.dynamite.startup.StartUpActivity}" drawable="google_chat"/>
+    <item component="ComponentInfo{com.openai.chatgpt/com.openai.chatgpt.MainActivity}" drawable="others_chatgpt"/>
+    <item component="ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main}" drawable="google_chrome"/>
+    <item component="ComponentInfo{com.lumiq.circa/com.lumiq.circa.HomeActivity}" drawable="others_circa"/>
+    <item component="ComponentInfo{com.anthropic.claude/com.anthropic.claude.mainactivity.MainActivity}" drawable="others_claude"/>
+    <item component="ComponentInfo{com.xinlukou.metroman/com.xinlukou.metroman.MainActivity}" drawable="others_metro_man"/>
+    <item component="ComponentInfo{com.google.android.apps.maps/com.google.android.maps.MapsActivity}" drawable="google_maps"/>
+    <item component="ComponentInfo{com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity}" drawable="others_didi"/>
+    <item component="ComponentInfo{com.android.mms/com.android.mms.ui.MmsTabActivity}" drawable="system_messages"/>
+    <item component="ComponentInfo{com.discord/com.discord.main.MainDefault}" drawable="others_discord"/>
+    <item component="ComponentInfo{com.epson.epsonsmart/com.epson.epsonsmart.controller.splash.SplashActivity}" drawable="others_epson_smart_panel"/>
+    <item component="ComponentInfo{com.miui.miservice/com.miui.miservice.main.MainActivity}" drawable="system_beta_feedback"/>
 </resources>
