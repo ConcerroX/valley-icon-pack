@@ -73,13 +73,23 @@ dependencies {
     debugImplementation(libs.compose.uiTooling)
 }
 
-compose.desktop {
-    application {
-        mainClass = "concerrox.valley.MainKt"
-        nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "concerrox.valley"
-            packageVersion = "1.0.0"
+compose {
+
+    resources {
+        publicResClass = false
+        packageOfResClass = "concerrox.valley"
+        generateResClass = auto
+    }
+
+    desktop {
+        application {
+            mainClass = "concerrox.valley.MainKt"
+            nativeDistributions {
+                targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
+                packageName = "concerrox.valley"
+                packageVersion = "1.0.0"
+            }
         }
     }
+
 }

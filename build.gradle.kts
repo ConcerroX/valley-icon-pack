@@ -14,8 +14,8 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:9.0.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.10")
+        classpath(libs.gradle)
+        classpath(libs.kotlin.gradle.plugin)
     }
 }
 
@@ -23,7 +23,6 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        maven { url = uri("https://jitpack.io") }
-        maven { url = uri("https://maven.google.com") }
+        maven("https://jitpack.io")
     }
 }

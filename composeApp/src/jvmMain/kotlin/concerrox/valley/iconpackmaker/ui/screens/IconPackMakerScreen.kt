@@ -11,19 +11,17 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import concerrox.ui.component.XButton
-import concerrox.ui.component.XTheme
+import concerrox.ui.component.XMaterialTheme
 import concerrox.valley.iconpackmaker.ui.components.AddItemCard
 import concerrox.valley.iconpackmaker.ui.components.IconGridItem
 import concerrox.valley.iconpackmaker.ui.dialogs.AddCategoryDialog
 import concerrox.valley.iconpackmaker.ui.dialogs.AddIconWithImagesDialog
 import concerrox.valley.iconpackmaker.viewmodel.IconPackEditorViewModel
 import kotlinx.coroutines.launch
-import java.io.File
 
 @Composable
 fun IconPackMakerScreen() {
-    XTheme {
+    XMaterialTheme {
         val viewModelFactory = viewModelFactory { initializer { IconPackEditorViewModel() } }
         val viewModel: IconPackEditorViewModel = viewModel(factory = viewModelFactory)
 

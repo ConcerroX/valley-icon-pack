@@ -3,11 +3,12 @@ package concerrox.valley
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import concerrox.valley.iconpackmaker.IconPackMakerApp
+import org.jetbrains.compose.resources.stringResource
 
 fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
-        title = "Valley",
+        title = stringResource(Res.string.app_name),
     ) {
         IconPackMakerApp()
     }
