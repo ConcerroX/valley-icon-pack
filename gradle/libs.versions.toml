@@ -1,45 +1,63 @@
 [versions]
-agp = "9.0.1"
 #noinspection UnusedVersionCatalogEntry
 android-compileSdk = "36"
 #noinspection UnusedVersionCatalogEntry
 android-minSdk = "24"
 #noinspection UnusedVersionCatalogEntry
 android-targetSdk = "36"
-androidx-activity = "1.12.4"
-androidx-lifecycle = "2.9.6"
-coilCompose = "3.4.0"
-composeHotReload = "1.0.0"
-composeMultiplatform = "1.10.2"
-gradle = "9.0.1"
-kotlin = "2.3.10"
-kotlinGradlePlugin = "2.2.10"
+
+gradle = "9.1.1"
+agp = "9.1.1"
+kotlin = "2.3.20"
 kotlinx-coroutines = "1.10.2"
-material = "1.11.0-alpha03"
-material3 = "1.10.0-alpha05"
+androidx-lifecycle = "2.10.0"
+composeMultiplatform = "1.10.3"
+
+xmlUtil = "1.0.0-rc2"
+koin    = "4.2.1"
+
 
 [libraries]
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
-coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
-compose-uiTooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "composeMultiplatform" }
-androidx-lifecycle-viewmodelCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
-androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
-compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "composeMultiplatform" }
-compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "composeMultiplatform" }
-compose-material = { module = "org.jetbrains.compose.material:material", version.ref = "material" }
-compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
-compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "composeMultiplatform" }
-compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
-compose-uiToolingPreview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "composeMultiplatform" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
-kotlinx-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+kotlin-gradle-plugin     = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin",      version     = "2.2.10"             }
+kotlinx-coroutines       = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core",  version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 
+androidx-activityCompose            = { module = "androidx.activity:activity-compose",                           version     = "1.13.0"             }
+androidx-navigation3-ui             = { module = "org.jetbrains.androidx.navigation3:navigation3-ui",            version     = "1.0.0-alpha06"      }
+androidx-lifecycle-viewmodelCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-runtimeCompose   = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose",   version.ref = "androidx-lifecycle" }
+
+compose-ui                   = { module = "org.jetbrains.compose.ui:ui",                           version.ref = "composeMultiplatform" }
+compose-ui-tooling           = { module = "org.jetbrains.compose.ui:ui-tooling",                   version.ref = "composeMultiplatform" }
+compose-ui-tooling-preview   = { module = "org.jetbrains.compose.ui:ui-tooling-preview",           version.ref = "composeMultiplatform" }
+compose-runtime              = { module = "org.jetbrains.compose.runtime:runtime",                 version.ref = "composeMultiplatform" }
+compose-foundation           = { module = "org.jetbrains.compose.foundation:foundation",           version.ref = "composeMultiplatform" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "composeMultiplatform" }
+
+compose-material             = { module = "org.jetbrains.compose.material:material",   version = "1.11.0-beta02"  }
+compose-material3            = { module = "org.jetbrains.compose.material3:material3", version = "1.10.0-alpha05" }
+
+coil-compose          = { module = "io.coil-kt.coil3:coil-compose",            version     = "3.4.0"   }
+xmlUtil-core          = { module = "io.github.pdvrieze.xmlutil:core",          version.ref = "xmlUtil" }
+xmlUtil-serialization = { module = "io.github.pdvrieze.xmlutil:serialization", version.ref = "xmlUtil" }
+
+koin-bom               = { module = "io.insert-koin:koin-bom", version.ref = "koin" }
+koin-core              = { module = "io.insert-koin:koin-core"                      }
+koin-android           = { module = "io.insert-koin:koin-android"                   }
+koin-androidx-compose  = { module = "io.insert-koin:koin-androidx-compose"          }
+koin-compose           = { module = "io.insert-koin:koin-compose"                   }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel"         }
+
+
 [plugins]
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
-composeHotReload = { id = "org.jetbrains.compose.hot-reload", version.ref = "composeHotReload" }
-composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
-composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application",             version.ref = "agp" }
+androidLibrary     = { id = "com.android.library",                 version.ref = "agp" }
+
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform",        version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+composeHotReload     = { id = "org.jetbrains.compose.hot-reload",    version     = "1.0.0"                }
+composeMultiplatform = { id = "org.jetbrains.compose",               version.ref = "composeMultiplatform" }
+composeCompiler      = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin"               }

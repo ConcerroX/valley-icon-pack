@@ -1,8 +1,5 @@
 package concerrox.valley.iconpackmaker.model
 
-/**
- * 图标包的完整数据模型
- */
 data class IconPackData(
     val categories: List<Category> = Category.createDefaultCategories(),
     val version: Int = 1
