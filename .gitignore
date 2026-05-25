@@ -164,3 +164,4 @@ release/
 app/src/main/res/drawable-v31/
 app/src/main/res/xml-v31/
 /.kotlin/
+/local.properties
