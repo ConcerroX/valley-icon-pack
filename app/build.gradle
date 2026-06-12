@@ -1,3 +1,7 @@
+plugins {
+    alias(libs.plugins.kotlinAndroid)
+}
+
 apply plugin: 'com.android.application'
 
 android {
@@ -51,6 +55,9 @@ android {
     lint {
         abortOnError false
     }
+//    kotlinOptions {
+//        jvmTarget = '17'
+//    }
 }
 
 java {
@@ -61,4 +68,5 @@ java {
 
 dependencies {
     implementation project(':library')
+    implementation libs.androidx.core.ktx
 }

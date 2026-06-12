@@ -8,19 +8,20 @@ android-targetSdk = "36"
 
 gradle = "9.1.1"
 agp = "9.1.1"
-kotlin = "2.3.20"
+kotlin = "2.3.21"
 kotlinx-coroutines = "1.10.2"
 androidx-lifecycle = "2.10.0"
 composeMultiplatform = "1.10.3"
 
 xmlUtil = "1.0.0-rc2"
 koin    = "4.2.1"
+coreKtx = "1.18.0"
 
 
 [libraries]
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 
-kotlin-gradle-plugin     = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin",      version     = "2.2.10"             }
+kotlin-gradle-plugin     = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin",      version     = "2.2.20" }
 kotlinx-coroutines       = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core",  version.ref = "kotlinx-coroutines" }
 kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 
@@ -49,6 +50,7 @@ koin-android           = { module = "io.insert-koin:koin-android"               
 koin-androidx-compose  = { module = "io.insert-koin:koin-androidx-compose"          }
 koin-compose           = { module = "io.insert-koin:koin-compose"                   }
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel"         }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
 
 [plugins]
@@ -58,6 +60,7 @@ androidLibrary     = { id = "com.android.library",                 version.ref =
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform",        version.ref = "kotlin" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
-composeHotReload     = { id = "org.jetbrains.compose.hot-reload",    version     = "1.0.0"                }
+composeHotReload     = { id = "org.jetbrains.compose.hot-reload",    version     = "1.1.1"                }
 composeMultiplatform = { id = "org.jetbrains.compose",               version.ref = "composeMultiplatform" }
 composeCompiler      = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin"               }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

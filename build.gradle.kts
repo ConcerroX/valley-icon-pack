@@ -14,10 +14,10 @@ buildscript {
         mavenCentral()
         google()
     }
-    dependencies {
-        classpath(libs.gradle)
-        classpath(libs.kotlin.gradle.plugin)
-    }
+//    dependencies {
+//        classpath(libs.gradle)
+//        classpath(libs.kotlin.gradle.plugin)
+//    }
 }
 
 allprojects {

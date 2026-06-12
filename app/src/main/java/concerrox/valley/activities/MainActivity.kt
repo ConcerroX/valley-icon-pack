@@ -1,21 +1,20 @@
-package concerrox.valley.activities;
+package concerrox.valley.activities
 
-import androidx.annotation.NonNull;
+import android.os.Bundle
+import candybar.lib.activities.CandyBarMainActivity
+import concerrox.valley.licenses.License
 
-import concerrox.valley.licenses.License;
+class MainActivity : CandyBarMainActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setCon
+    }
 
-import candybar.lib.activities.CandyBarMainActivity;
-
-public class MainActivity extends CandyBarMainActivity {
-
-    @NonNull
-    @Override
-    public ActivityConfiguration onInit() {
-        return new ActivityConfiguration()
-                .setLicenseCheckerEnabled(License.isLicenseCheckerEnabled())
-                .setLicenseKey(License.getLicenseKey())
-                .setRandomString(License.getRandomString())
-                .setDonationProductsId(License.getDonationProductsId())
-                .setPremiumRequestProducts(License.getPremiumRequestProductsId(), License.getPremiumRequestProductsCount());
+    override fun onInit(): ActivityConfiguration {
+        return ActivityConfiguration().setLicenseCheckerEnabled(License.isLicenseCheckerEnabled())
+            .setLicenseKey(License.getLicenseKey()).setRandomString(License.getRandomString())
+            .setDonationProductsId(License.getDonationProductsId()).setPremiumRequestProducts(
+                License.getPremiumRequestProductsId(), License.getPremiumRequestProductsCount()
+            )
     }
 }
